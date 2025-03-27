@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header-placeholder">
+        <script>
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header-placeholder").innerHTML = data;
+                })
+                .catch(error => console.error("Error loading header:", error));
+        </script>
+    </header>
+    <h1>What is the best time to reach you?</h1>
+    <div>
+        <select name="" id="timeSelect">
+            <option value="">Choose Your Time</option>
+            <option value="8 AM">8 AM </option>
+            <option value="9 AM">9 AM </option>
+            <option value="10 AM">10 AM </option>
+            <option value="11 AM">11 AM </option>
+            <option value="12 PM">12 PM </option>
+            <option value="1 PM">1 PM </option>
+            <option value="2 PM">2 PM </option>
+            <option value="3 PM">3 PM </option>
+            <option value="4 PM">4 PM </option>
+        </select>
+        <p id="cst">(All time zones are in CST)</p>
+        <button id="continueBtn">CONTINUE</button>
+        <div class="footer">
+            <a href="#">Terms and Conditions</a> | 
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">California Privacy</a>
+        </div>
+    </div>
+    <div class="extraInfo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, temporibus doloribus. Nisi volupta
+            tum fuga enim exercitationem repudiandae necessitatibus, nobis, expedita quidem explicabo 
+            consequatur eum inventore dolorum tempore aperiam reiciendis est?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, temporibus doloribus. Nisi volupta
+            tum fuga enim exercitationem repudiandae necessitatibus, nobis, expedita quidem explicabo 
+            consequatur eum inventore dolorum tempore aperiam reiciendis est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, temporibus doloribus. Nisi volupta
+            tum fuga enim exercitationem repudiandae necessitatibus, nobis, expedita quidem explicabo 
+            consequatur eum inventore dolorum tempore aperiam reiciendis est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, temporibus doloribus. Nisi volupta
+            tum fuga enim exercitationem repudiandae necessitatibus, nobis, expedita quidem explicabo 
+            consequatur eum inventore dolorum tempore aperiam reiciendis est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, temporibus doloribus. Nisi volupta
+            tum fuga enim exercitationem repudiandae necessitatibus, nobis, expedita quidem explicabo 
+            consequatur eum inventore dolorum tempore aperiam reiciendis est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, temporibus doloribus. Nisi volupta
+            tum fuga enim exercitationem repudiandae necessitatibus, nobis, expedita quidem explicabo 
+            consequatur eum inventore dolorum tempore aperiam reiciendis est?
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

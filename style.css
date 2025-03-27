@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    width:100%;
+}
+
+.container {
+    padding: 20px;
+    width: 90%;
+    max-width: 350px;
+}
+
+input, button, select {
+    width: 100%;
+    padding: 10px 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+button:hover {
+    background: darkblue;
+}
+
+#cst {
+    font-size: 10px;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 15px;
+    font-size: 12px;
+}
+.footer a {
+    text-decoration: none;
+    color: blue;
+    margin: 0 5px;
+}
+.checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.checkbox-container input {
+    width: auto;
+    margin: 0 10px ;
+}
+
+.extraInfo {
+    background-color: rgba(221, 221, 221, 0.205);
+    margin-top: 1rem;
+    padding: 2em 4em;
+}
+
+#header-placeholder {
+    width: 100%;
+}

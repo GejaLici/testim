@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header-placeholder">
+        <script>
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header-placeholder").innerHTML = data;
+                })
+                .catch(error => console.error("Error loading header:", error));
+        </script>
+    </header>
+    
+    <h1>Add Your Personal Details</h1>
+
+    <div class="container">
+        <form id="personalDetailsForm">
+            <input type="text" id="firstName" placeholder="First name" required>
+            <input type="text" id="lastName" placeholder="Last name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+            <div class="checkbox-container">
+                <input type="checkbox" id="consent" required>
+                <label for="consent">By clicking the button above, you acknowledge, consent, and agree to the following: Our Privacy Policy and our Terms & Conditions...</label>
+            </div>
+            <button type="submit">SUBMIT YOUR DETAILS</button>
+        </form>
+        <div class="footer">
+            <a href="#">Terms and Conditions</a> | 
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">California Privacy</a>
+        </div>
+    </div>
+    <div class="extraInfo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, temporibus doloribus. Nisi volupta
+            tum fuga enim exercitationem repudiandae necessitatibus, nobis, expedita quidem explicabo 
+            consequatur eum inventore dolorum tempore aperiam reiciendis est?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, temporibus doloribus. Nisi volupta
+            tum fuga enim exercitationem repudiandae necessitatibus, nobis, expedita quidem explicabo 
+            consequatur eum inventore dolorum tempore aperiam reiciendis est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, temporibus doloribus. Nisi volupta
+            tum fuga enim exercitationem repudiandae necessitatibus, nobis, expedita quidem explicabo 
+            consequatur eum inventore dolorum tempore aperiam reiciendis est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, temporibus doloribus. Nisi volupta
+            tum fuga enim exercitationem repudiandae necessitatibus, nobis, expedita quidem explicabo 
+            consequatur eum inventore dolorum tempore aperiam reiciendis est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, temporibus doloribus. Nisi volupta
+            tum fuga enim exercitationem repudiandae necessitatibus, nobis, expedita quidem explicabo 
+            consequatur eum inventore dolorum tempore aperiam reiciendis est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, temporibus doloribus. Nisi volupta
+            tum fuga enim exercitationem repudiandae necessitatibus, nobis, expedita quidem explicabo 
+            consequatur eum inventore dolorum tempore aperiam reiciendis est?
+        </p>
+    </div>
+
+
+    <script>
+        document.getElementById('personalDetailsForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your details have been submitted successfully!');
+        });
+    </script>
+</body>
+</html>
